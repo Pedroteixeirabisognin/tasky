@@ -1,0 +1,4 @@
+# Schema exclusivo para validar o bootstrap; não faz parte da API da aplicação.
+type Query {
+    bootstrap: Boolean
+}
