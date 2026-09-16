@@ -9,7 +9,7 @@
 
 - [x] **T001** Criar projeto Spring Boot com Java 25 e Gradle.
 - [x] **T002** Adicionar Spring for GraphQL.
-- [ ] **T003** Adicionar Spring Data JPA.
+- [x] **T003** Adicionar Spring Data JPA.
 - [ ] **T004** Adicionar driver MySQL.
 - [ ] **T005** Configurar conexão com MySQL.
 - [ ] **T006** Criar banco de desenvolvimento do Tasky.

@@ -9,7 +9,11 @@ import org.springframework.graphql.execution.GraphQlSource;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@SpringBootTest(properties = "spring.graphql.schema.locations=classpath:graphql-test/")
+// Este teste valida GraphQL sem depender da configuração de banco de T004/T005.
+@SpringBootTest(properties = {
+        "spring.graphql.schema.locations=classpath:graphql-test/",
+        "spring.autoconfigure.exclude=org.springframework.boot.jdbc.autoconfigure.DataSourceAutoConfiguration"
+})
 class GraphQlBootstrapTests {
 
     @Autowired

@@ -12,11 +12,16 @@ No Windows (PowerShell):
 .\gradlew.bat bootRun
 ```
 
-O build executa o teste de inicialização do contexto Spring e gera o JAR executável:
+O build executa os testes e gera o JAR executável:
 
 ```shell
 java -jar build/libs/tasky-0.0.1-SNAPSHOT.jar
 ```
 
-Neste bootstrap (T001), a aplicação carrega o contexto e encerra normalmente,
-pois ainda não há servidor web ou conexão com banco de dados configurados.
+Com a T003, Spring Data JPA e Hibernate estão disponíveis. A execução por
+`bootRun` ou pelo JAR depende do driver MySQL (T004) e da configuração de conexão
+(T005), ainda pendentes. Até lá, a inicialização normal falha por falta de DataSource.
+
+Os testes de bootstrap desabilitam a autoconfiguração de DataSource apenas em seus
+próprios contextos. O teste de dependências verifica Spring Data JPA e a descoberta
+do provedor Hibernate, sem testar persistência nem conectar a um banco.
