@@ -7,7 +7,7 @@
 
 ## Fase 1 — Bootstrap do projeto
 
-- [ ] **T001** Criar projeto Spring Boot com Java 25 e Gradle.
+- [x] **T001** Criar projeto Spring Boot com Java 25 e Gradle.
 - [ ] **T002** Adicionar Spring for GraphQL.
 - [ ] **T003** Adicionar Spring Data JPA.
 - [ ] **T004** Adicionar driver MySQL.
